@@ -36,4 +36,4 @@ for (i in 1:10299) {
 }
 colnames(subject)<-'subject'
 output <- data.frame('mean'=m, 'std'=s, 'activity'=activity, 'subject'= c(subject))
-write.csv(output,file="data.csv")
+write.table(output,file="data.txt")
